@@ -14,7 +14,9 @@ namespace bdm {
  *
 */
 
-class PhysicalBond {
+class PhysicalBond: public Agent { // should this be a subclass of Agent?
+  //BDM_AGENT_HEADER(class_name, base_class, class_version_id)
+  BDM_AGENT_HEADER(PhysicalBond, Agent, 1);
 
   public:
     PhysicalBond() {}
@@ -41,6 +43,7 @@ class PhysicalBond {
     void setHasEffectOnB(bool hasEffectOnB) { hasEffectOnB_ = hasEffectOnB; }
     bool isHasEffectOnB() { return hasEffectOnB_; }
 
+    // just an idea?
     void CreateBond(Agent* agent_a, Agent* agent_b) {
       //??? Lock the two agents together with the bond ???
       //??? Could a cell be made between the two that excretes a chemical ???
