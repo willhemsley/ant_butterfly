@@ -6,6 +6,7 @@
 #include "my_cell.h"
 #include "core/util/timing.h"
 #include "behavior.h"
+#include "physical_bond.h"
 
 namespace bdm {
 
