@@ -68,7 +68,7 @@ class BondwithNearbyAgents : public Behavior {
     explicit BondwithNearbyAgents(double sq_dist) : sq_dist_(sq_dist) {}
     virtual ~BondwithNearbyAgents() {}
 
-  void Run(Agent* agent) override {
+  void Run(Agent* agent, double sq_dist=1) override {
     auto* sim = Simulation::GetActive();
     auto* random = sim->GetRandom();
     auto& position = agent->GetPosition(); // get position of cell
@@ -78,7 +78,7 @@ class BondwithNearbyAgents : public Behavior {
     auto* ctxt = sim->GetExecutionContext(); // get context information
     auto check_surrounding = L2F([&](Agent* neighbour, sq_dist) {
       auto* nearby = bdm_static_cast<const MyCell*>neighbor; // ???
-      if (nearby.GetCellType() != agent_a.GetCellType()) { // if others are opposing type
+      if (nearby->GetCellType() != agent_a->GetCellType()) { // if others are opposing type
         PhysicalBond(agent_a, nearby) // Add Physical Bond
       }
     });

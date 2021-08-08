@@ -4,6 +4,9 @@
 #define PHYSICAL_BOND_H_
 
 #include <biodynamo.h>
+#include "my_cell.h"
+
+enum Substances{ kBond }; // define the bonding substance
 
 namespace bdm {
 
@@ -14,9 +17,7 @@ namespace bdm {
  *
 */
 
-class PhysicalBond: public Agent { // should this be a subclass of Agent?
-  //BDM_AGENT_HEADER(class_name, base_class, class_version_id)
-  BDM_AGENT_HEADER(PhysicalBond, Agent, 1);
+class PhysicalBond{
 
   public:
     PhysicalBond() {}
@@ -59,18 +60,21 @@ class PhysicalBond: public Agent { // should this be a subclass of Agent?
       const auto& position_b = agent_b->GetPosition(); // get position of agent_2
 
       // find midpoint of agents
-      std::vector<Double3> midpoint_pos = (position1 + position2) / 2;
-      auto avg_dist = midpoint_pos[0] + midpoint_pos[1] + midpoint_pos[2] / 3;
+      std::vector<Double3> midpoint_pos = (position_a + position_b) / 2;
+      double x_dist = midpoint_pos.at(0);
+      double y_dist = midpoint_pos.at(1);
+      double z_dist = midpoint_pos.at(2);
+      double avg_dist = (x_dist + y_dist + z_dist) / 3;
 
       // create new cell (bonding cell) at midpoint
-      MyCell* bond = bond MyCell(midpoint_pos);
+      MyCell* bond = bond MyCell(auto midpoint_pos);
       bond->SetDiameter(avg_dist); // set size of bond to max distance away
       // bonding cell secretes substabce to keep together
       bond->AddBehavior(new Secretion("Bond"));
 
       // 5. agents are attracted to the bond cell chemical
-      agent1->AddBehavior(new Chemotaxis("Bond", 1));
-      agent2->AddBehavior(new Chemotaxis("Bond", 1));
+      agent_a->AddBehavior(new Chemotaxis("Bond", 1));
+      agent_b->AddBehavior(new Chemotaxis("Bond", 1));
     }
 
   private:
