@@ -76,13 +76,15 @@ class BondwithNearbyAgents : public Behavior {
     // Check for nearby agents (found with epidemiology/behavior.h)
     auto* agent_a = bdm_static_cast<MyCell*>(agent); // ???
     auto* ctxt = sim->GetExecutionContext(); // get context information
-    auto check_surrounding = L2F([&](Agent* neighbour, sq_dist) {
-      auto* nearby = bdm_static_cast<const MyCell*>neighbor; // ???
-      if (nearby->GetCellType() != agent_a->GetCellType()) { // if others are opposing type
-        PhysicalBond(agent_a, nearby) // Add Physical Bond
-      }
-    });
-    ctxt->ForEachNeighbor(check_surrounding, *agent_a, sq_dist);
+    auto check_surrounding =
+      L2F([&](Agent* neighbour, sq_dist) {
+        auto* nearby = bdm_static_cast<const MyCell*>neighbor; // ???
+        if (nearby->GetCellType() != agent_a->GetCellType()) { // if others are opposing type
+          PhysicalBond(agent_a, nearby) // Add Physical Bond
+        }
+      });
+    ctxt->ForEachNeighbor(check_surrounding, *agent_a,
+                          sq_dist);
   }
 
   private:
