@@ -92,6 +92,7 @@ inline int Simulate(int argc, const char** argv) {
     //larvae->AddBehavior(new YMovement_Und(1));
     // larvae->SetAgentType(-1);
     // larvae->SetButterflyColour(-1);
+    larvae->AddBehavior(new Bond());
 
     rm->AddAgent(larvae);
   }

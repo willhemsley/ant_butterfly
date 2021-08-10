@@ -4,7 +4,6 @@
 #ifndef BEHAVIOR_H_
 #define BEHAVIOR_H_
 
-#include "core/behavior/behavior.h"
 #include "ant.h"
 #include "butterfly.h"
 //#include "physical_bond.h"
@@ -61,32 +60,55 @@ class YMovement_Und : public Behavior {
 };
 
 // Bonding with Nearby Agents
-class BondwithNearbyAgents : public Behavior {
-   BDM_BEHAVIOR_HEADER(BondwithNearbyAgents, Behavior, 1);
+class Bond_Species : public Behavior {
+  BDM_BEHAVIOR_HEADER(Bond_Species, Behavior, 1);
 
-   public:
-     BondwithNearbyAgents () {}
-     explicit BondwithNearbyAgents(double squared_dist) : squared_dist_(squared_dist) {}
-     virtual ~BondwithNearbyAgents() {}
+  public:
+     Bond_Species() {}
+     explicit Bond_Species(double squared_dist) : squared_dist_(squared_dist) {}
+     virtual ~Bond_Species() {}
 
-   void FindNearby(Agent* agent, double squared_dist_) override {
+   /*
+   *
+   * Finding agents of opposing type and bonding if within set distance
+   *
+   **/
+   void Run(Cell* cell, double squared_dist_, double squared_radius) {
+     auto* larva = bdm_static_cast<Butterfly*>(cell);
      auto* sim = Simulation::GetActive();
-     auto& position = agent->GetPosition(); // get position of agent
+     auto& position = larva->GetPosition(); // get position of agent
 
      auto* ctxt = sim->GetExecutionContext(); // get context information
      auto check_surrounding =
-       L2F([&](Agent* neighbor, squared_dist) {
-         if (neighbor->GetAgentType() != agent->GetAgentType()) { // if others are opposing type
-           PhysicalBond(agent_a, nearby) // Apply the Physical Bond between agents
+       L2F([&](Agent* neighbor, double squared_dist) {
+
+         // 1. Check if neighbor is an Ant type
+         if (auto* nearby_ant = dynamic_cast<Ant*>(neighbor)) {
+
+           // 2. Update vectors of bonded agents
+           // add bonded butterfly to ant bond vector
+           vector<Cell*> bonded_bfly_new = nearby_ant->GetBondedButterfly();
+           bonded_bfly_new.push_back(larva);
+           nearby_ant->SetBondedButterfly(bonded_bfly_new);
+
+           // Get vector of ants bonded to butterfly
+           vector<Cell*> bonded_ants_new = larva->GetBondedAnts();
+           bonded_ants_new.push_back(nearby_ant);
+           larva->SetBondedAnts(bonded_ants_new);
+
+           // 3. Remove movement behaviors when to create 'bond' behavior
+           // TO-DO
+
          }
        });
 
-     ctxt->ForEachNeighbor(check_surrounding, *agent, squared_dist);
+     ctxt->ForEachNeighbor(check_surrounding, *larva, squared_radius);
+
    }
 
    private:
-     double sq_dist_;
- };
+     double squared_dist_ {1};
+};
 
 }  // namespace bdm
 
