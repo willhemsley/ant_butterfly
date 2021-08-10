@@ -19,7 +19,7 @@ inline int Simulate(int argc, const char** argv) {
     // Create an artificial bound for the simulation space
     param->bound_space = Param::BoundSpaceMode::kClosed;  // set domain as closed space
     param->min_bound = 0;
-    param->max_bound = 250; // cube of 400*400*400
+    param->max_bound = 500; // cube of 400*400*400
     param->unschedule_default_operations = {"mechanical forces"};
     param->remove_output_dir_contents = true; // remove the old output files
   };
@@ -60,7 +60,7 @@ inline int Simulate(int argc, const char** argv) {
 
   for (int i = 0; i < num_ant; ++i) {
     x_coord = myrand->Uniform(param->min_bound, param->max_bound);
-    y_coord = myrand->Uniform(0, 250); // set starting boundary in y
+    y_coord = myrand->Uniform(250, 500); // set starting boundary in y
     z_coord = myrand->Uniform(param->min_bound, param->max_bound);
 
     Ant* ant = new Ant({x_coord, y_coord, z_coord});
@@ -71,6 +71,7 @@ inline int Simulate(int argc, const char** argv) {
     //ant->AddBehavior(new YMovement_Und(-0.5)); // MovementX(speed)
     // ant->SetAgentType(1);
     // ant->SetAntColour(1);
+    ant->AddBehavior(new Bond_Species());
 
     rm->AddAgent(ant);
   }
@@ -81,7 +82,7 @@ inline int Simulate(int argc, const char** argv) {
 
   for (int j = 0; j < num_larvae; ++j) {
     x_coord = myrand->Uniform(param->min_bound, param->max_bound); // set starting boundary in x
-    y_coord = myrand->Uniform(0, 250);
+    y_coord = myrand->Uniform(250, 500);
     z_coord = myrand->Uniform(param->min_bound, param->max_bound);
 
     Butterfly* larvae = new Butterfly({x_coord, y_coord, z_coord});

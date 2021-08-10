@@ -1,9 +1,9 @@
 <VTKFile type="ImageData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
-  <ImageData WholeExtent="0 19 0 19 0 19" Origin="0 0 197.36842105263156" Spacing="13.157894736842104 13.157894736842104 13.157894736842104">
+  <ImageData WholeExtent="0 19 0 19 0 19" Origin="0 0 394.7368421052631" Spacing="26.31578947368421 26.31578947368421 26.31578947368421">
   <Piece Extent="0 19 0 19 15 19">
     <PointData>
-      <DataArray type="Float64" Name="Substance Concentration" format="binary" RangeMin="0" RangeMax="0.887004">
-        AQAAAACAAACAPgAAJQEAAA==eJzt2T0SwiAQBeD0eh7b9HFstXfG0tLGO3gEL+QdHHvHQ1hkKMC/ILvwWN5Xx/DcZQgkXUf06jJcb/dh15fOUZvYumlfnzrO/HxazlaP/tfvY6+XMo5zUK+fdah1KTWvYmnlSr2vdC53P6m+SOX7lAdtvpSuE/nCuqLUuZZ1z4rW6ov6f1Hnffg8QcnluH0wat38XLH7df39vfb5qJTY+tF7U8+/OTOR3vkGJQ/JQu0P6vME9Xxkhavn5rhfrLc4fQ+h5pKCOs9R14UQ6rnIQc2VSnp/r/0+ViKjpKm50PNbqXMrOULsI+a4rcn73Z79RMF+0DecHzag9lFr/4P2ftgq1sUG7u99PJf9By2PU0s/iYgoLz4PiAgN1yVb2M/RE7TEFQ4=
+      <DataArray type="Float64" Name="Substance Concentration" format="binary" RangeMin="0" RangeMax="0.896751">
+        AQAAAACAAACAPgAAHgEAAA==eJzt2T8OgjAUx3Fu48jizsTCzi28gjdy8hieQeJuOICjg8GkTUhbeKU/yPezmJj+eQ8a+gpVBQAAJo9ueL27trFqt7S93y81rqG6Xp63Mdgvtb2V3zx9cl654/Lns7oufn+r8azGcfPsV+dtfb+WXr+5dluvp1hz6041XgAAcshdR5Tm1sHr6y7buNqm/pxP9X38/05xxvUPt/PnWxpnaj3o5qOzHiaxeanGn8r6fBQaX41afP76U3kuAQCOQXU/sdr3cue3Ni7194yp3wncfnr1Y+r5o9T9UP1uFIon9v+tlL5Oat/XVJ+jAAAoOfq+p5KfShy+XPWj6vloL/OqUK3vS5975uJSf98BAACggjoJe6S2btXiKeULiPcJZg==
       </DataArray>
     </PointData>
     <CellData>
