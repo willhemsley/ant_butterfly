@@ -1,0 +1,13 @@
+<VTKFile type="ImageData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <ImageData WholeExtent="0 9 0 9 0 9" Origin="0 0 166.66666666666669" Spacing="55.55555555555556 55.55555555555556 55.55555555555556">
+  <Piece Extent="0 9 0 9 3 5">
+    <PointData>
+      <DataArray type="Float64" Name="Substance Concentration" format="binary" RangeMin="0" RangeMax="1.5985744000000002">
+        AQAAAACAAABgCQAAywQAAA==eJxjYKAN0H/ktcfzF5cNpebEnl0nmnfHwGb+Vv68X8k/bSDmasHNxWUPLnGIOZK2J//6qj/7f8nW7ET3pd9cwrYQexxsTi0zC09LQdgDo0+jicPMk1/lr3ez/o3tk84rGdfPzbbTjZyn+uz/I9vlSb88VbiVbTUn6dTXMVy2/WHotmEut7Ct87v+VTuAtIDqIeeNQPF1pX+2NgH5SzQtfLdbm9hEzRP3vH5utV3B2StVAo5B9nN4HlSDzF3wT6SnsOGN7ZRnLVHsF2bbCWUfvyrG+Ng2fv4mrfVA+lJ5X5D5xdl2UzcI/00C8m+lKc9/BzR3Uf3VdJA5PAt+heSfX223iutDcgTDZ9u7XBNyQeb4P+o//Q4oP+XF4gqQ/i1LLMOPX5lt573jgH6XS5D994c8ISD+5qVrTSuYL9tyTNcOAeljEDoR8f1qt91sGVMLkPge85yVpxge22ox3EsAyVf3dlbVAe159K44if3Carv/NvxX3zkm2U/nnvH6e+JGu+P58iFLgP7ZbPHnohjjZdtPH54m1gDpvlU3l1wGuvsnNLyEOLc0gsLP5OG6Vacm6Nhebw/zNQKaK66mHgHyz1+nSHPXA99t+Zm7dPcC5XsEPppwpMLiifz0B0sP5OqnNtjfePUk+9Sn1rjkIf6VIpgPYPyvd/QOBaTcxAgnCN/KxhycL5jh6RKW7mH5YzFUHMb3uM3K8C90py1q/pGyCVpzcXflBBnb1EV/NUD5TfxvxkEfpPjteVtTC4rfE5FO8xkmytg+FrroAcoXpcUrt+Zc6LaD5ZPknZt2p3Mz20Zn9yuA8tcVzkkd1891233bcfIuKP3wG59cAkp//Yyt4PyR8M75EWfjG9u1tjNTQel60gQvp7NOQfYvuCH5hIn7yiWQPtbPbaUgcy7l3NjsDdQfVPm5zZ3psm1vxaFQkDndU55eBOWP/5/FGl/eWWLXuGC/EyhfXL1/qKCxitVhevt+cD5ZpHQjYvplmDmXbYVa5HjCY3babnd7Of9TiqStreaau9OB5httkma5BDT31541BemXZtvVrQflvyT7H9832YqWizoYntp5DsRv1+NKAdkP87dP1WqhVcB0HQdNl0lgcWHb3d0VczyB/shLnbIC5P81Wxf6gfJF3Mw7nfVAc+yFzwWC+ItXtfsbAeVxpRNigb9iwvWj+gI221UXT7QBuotcc8gFhPIBsQCW7ueB6wNc+QB3+QELRxg9F1o/ncwyemAEzAcwPiyf4Ko/0PNREjS+J255pwzKL07LqpNA6ROWf+rn/ljyFJifVp8sdEXkC0T98bIwMkM0hdN2aUGY7smwnbaw9Mh+5GQoqB7JPnclBFQf7HG7Cq6vYPmk4/2zCFC+sKvdcQFUr8DyZ9XWW2UzgP75WXo/KT5ip62CRw3YPRlQc1JL1+l8LGV1eC16HVzPcG51b2i8u8Ruf56IGShfiD95HjD98my7c7F7mkD56gzUnx1lHEdt9v23edh2TAXkL1ao+7pnXgWbu0UJkm9bZ8cEzwfWH689Ifnk1+JvIaD65FR8YnUdUnqG+F/Fxgxabrk8EgOH34l//vEg905QXNAOsp9927EEUP23YRYknzSxsnqD6pMV0Pqa0nQFA7D4AAB4RfP5
+      </DataArray>
+    </PointData>
+    <CellData>
+    </CellData>
+  </Piece>
+  </ImageData>
+</VTKFile>

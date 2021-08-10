@@ -1,0 +1,13 @@
+<VTKFile type="ImageData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <ImageData WholeExtent="0 9 0 9 0 9" Origin="0 0 0" Spacing="55.55555555555556 55.55555555555556 55.55555555555556">
+  <Piece Extent="0 9 0 9 0 2">
+    <PointData>
+      <DataArray type="Float64" Name="Substance Concentration" format="binary" RangeMin="0" RangeMax="0.7993520000000001">
+        AQAAAACAAABgCQAAMgUAAA==eJzVlWlQU1cYhmOVRtQpWIZFxCIBisGFRRQi91xAHdlJi0CwYBNZbVWgrY4OSwspZbAZq7KU0YC0QhUNIAJWQ3WsI1YCQiABMQiNwsjSukABK9vQ891LhqLDWKb90/Mnc27Oed/v3vO832Ew/h/DptPrqueoMTHXfddTWmTM7EfOM3U2EcLUljsGi+ejQraT72VnB2Lm/6/60M8XEX/m7HRVRKgIzfx0wgrW4DETxEvXueLNUKI7rqa37RbrTeluJRxrRIqxRdM+Gv1hSmeE4EmNl8mCpIh1OJVNRo4QCWO/8loZXagshC10bBKRRd0D7QbzlMj+Yen5WuzzIO0Xi+5JBUqh6tdDVWLGNy5L5iPZjf1yWBfwh4MP7Fta38a+gOe/DS20D2sWkcUOdb6OTWLyy9TyBoN5XSguL0MF672SuPzWBhFZ1cX/Eeq3CtpuBft4d43cYD1X7WlTv9nfJXHht17RCjH5c2/2aFOjmHxmmOKn6+bvUrL3E25rg5i8GWalAL2HbQrDSKyT/EPMfVGIFGWd2EDV03OL1mnf12fPOaTlasQuLZds8XdRP3+gysHvWz1u6Ak65izbFd2TnchwYvcNH/x+pQfGLwnxOR3aoxjTjxoh1F5P7oCPpTubA/Ux1w6tAl3hno/cob6VDYGSqxHaaK680JwMOx8qK0jKiuwjenlfZa8JlqG58vZPh4aff6uzs75UP6bdlkg/memkhXmida1f4nl2n5fzUZ3p8DszYhlq2+MhmsSchZwp42rjc6B9XIn8Szoxo+Gz+7ycD5S29fni5Meo8ln+NUIuJn03ZD4xwucdSumaI9mErxXwvJHKiR7S5FOTh9veKlPIhyYvhRkeHrFyCTnocXTgKebv7Dm3eCbmMa7SUmCJfdacZIUCR/J3lWbAUc2OzfmM4yZo0irg40TMjbGFKx945HZIlMCRgO8ZCPxosa7bfL3V34U//D43Rykm+6VH94Guoqc5ADjP7aB13WPM3C/i+i/UhVflYv4O3vLcDPuPhB7xBx6/kAw5w1xcW7lm4ICW66PRVmo/7+yC0ByliBT6rS6G73AwzvFFnXU3ylpedQrq6fxwyA/2FcVf9oN8JGyjdYWcM15QB788mcob14fOW4XTeBPU37T3XgXk9oMlNWqEz234iqwDnpfbdwdDPfklg1Q9ZcUCLsx/WrAuPTxIhuic9BEa7l/HmWadz/XErFU4H4/fqipex/vv88E1E7TestElTlGcTXM0G6+vG8yCTO2Rq5PEvMrjXfaBUpQ3xS/djy1m9Zlt6LyZe88+UIWS09fGQt/U8KtF+eggzkR/9999NH1o5u+0T/CnWQlm9wtJUWVzNJyvurB5N5yvmurznSixgPZRT/X9F3bbyvJwP7Qw33dCG/d933jJ2+cjp/N4M9raQ9ctzGW71DcC+JNHtsSDriC4LA18Vi63DoF5IUfAA597jfO7gJd3incZlbyhRAWmyRuh/49QPnqo1y3FA3TMDY/WPcW6AbulO5iNEnLIbnUM6EQfKKU4l0e1UJz3FAubgGfdwxxLlkpEXjPeFE/dI0vJolqcGzWf5tpTtUAK/T+U1f8e9O2kiEURwPnkelqn02RdLNTXVtASGcwYRGvZF3eCr7vgGJX7ONP9YbBef+RcIOQqmn3q9F48JxwrSMgnJ2D9XXgvdQZ9v7GYWbbw/b7rK5JXn7NFNVs6w0A3Vdn7GejU8nclfI73kUcM+quDpej097VRjCgVMVfeNOe8y7TWOxffQ38BQTcKEg==
+      </DataArray>
+    </PointData>
+    <CellData>
+    </CellData>
+  </Piece>
+  </ImageData>
+</VTKFile>

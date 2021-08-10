@@ -1,0 +1,13 @@
+<VTKFile type="ImageData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <ImageData WholeExtent="0 9 0 9 0 9" Origin="0 0 166.66666666666669" Spacing="55.55555555555556 55.55555555555556 55.55555555555556">
+  <Piece Extent="0 9 0 9 3 5">
+    <PointData>
+      <DataArray type="Float64" Name="Substance Concentration" format="binary" RangeMin="0" RangeMax="1.5985744000000002">
+        AQAAAACAAABgCQAA3AAAAA==eJxjYBgF1ABfXVavf8KRZEcdc4rsxGvMm+8Jmtmjm4vLHlziqOYUYZhzxOrUMjUhhD0w+kxZk+B/Idz2Q+gggu6A2Quxx83eWGzabdnuMqqFE6XmjILBCXClL0LyuNJr4c+YU3k40zNuc2D5o+B5A3s4b7bdaWi+YA07ULiD5bv9aZR8gtu96Oaimu9mf5njyZFlTOwOMD655QksX+TdZpjKBDdnNJ8MVUBsuiLOnCQ7MRLrFVzugZkj/v696TfG7/YwPiyf4Ko/SHUfev1BanrGn79pny8AfPfvhg==
+      </DataArray>
+    </PointData>
+    <CellData>
+    </CellData>
+  </Piece>
+  </ImageData>
+</VTKFile>

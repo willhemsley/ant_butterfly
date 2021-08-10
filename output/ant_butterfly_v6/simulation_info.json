@@ -1,0 +1,18 @@
+{
+  "simulation": {
+    "name":"ant_butterfly_v6",
+    "result_dir":"output/ant_butterfly_v6"
+  },
+  "agents": [
+    {
+      "name":"MyCell",
+      "glyph":"Glyph",
+      "shape":"Sphere",
+      "scaling_attribute":"diameter_"
+    }
+  ],
+  "extracellular_substances": [
+    { "name":"Substance_Sugar", "has_gradient":"false" }
+  ],
+  "insitu_script_arguments": ""
+}

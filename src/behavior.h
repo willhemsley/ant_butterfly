@@ -6,7 +6,7 @@
 
 #include "core/behavior/behavior.h"
 #include "my_cell.h"
-#include "physical_bond.h"
+//#include "physical_bond.h"
 
 namespace bdm {
 
@@ -59,37 +59,37 @@ class YMovement_Und : public Behavior {
     double ymove_speed_;
 };
 
-// Bonding with Nearby Agents
-class BondwithNearbyAgents : public Behavior {
-  BDM_BEHAVIOR_HEADER(BondwithNearbyAgents, Behavior, 1);
-
-  public:
-    BondwithNearbyAgents () {}
-    explicit BondwithNearbyAgents(double sq_dist) : sq_dist_(sq_dist) {}
-    virtual ~BondwithNearbyAgents() {}
-
-  void Run(Agent* agent, double sq_dist=1) override {
-    auto* sim = Simulation::GetActive();
-    auto* random = sim->GetRandom();
-    auto& position = agent->GetPosition(); // get position of cell
-
-    // Check for nearby agents (found with epidemiology/behavior.h)
-    auto* agent_a = bdm_static_cast<MyCell*>(agent); // ???
-    auto* ctxt = sim->GetExecutionContext(); // get context information
-    auto check_surrounding =
-      L2F([&](Agent* neighbour, sq_dist) {
-        auto* nearby = bdm_static_cast<const MyCell*>neighbor; // ???
-        if (nearby->GetCellType() != agent_a->GetCellType()) { // if others are opposing type
-          PhysicalBond(agent_a, nearby) // Add Physical Bond
-        }
-      });
-    ctxt->ForEachNeighbor(check_surrounding, *agent_a,
-                          sq_dist);
-  }
-
-  private:
-    double sq_dist_;
-};
+// // Bonding with Nearby Agents
+// class BondwithNearbyAgents : public Behavior {
+//   BDM_BEHAVIOR_HEADER(BondwithNearbyAgents, Behavior, 1);
+//
+//   public:
+//     BondwithNearbyAgents () {}
+//     explicit BondwithNearbyAgents(double sq_dist) : sq_dist_(sq_dist) {}
+//     virtual ~BondwithNearbyAgents() {}
+//
+//   void Run(Agent* agent, double sq_dist=1) override {
+//     auto* sim = Simulation::GetActive();
+//     auto* random = sim->GetRandom();
+//     auto& position = agent->GetPosition(); // get position of cell
+//
+//     // Check for nearby agents (found with epidemiology/behavior.h)
+//     auto* agent_a = bdm_static_cast<MyCell*>(agent); // ???
+//     auto* ctxt = sim->GetExecutionContext(); // get context information
+//     auto check_surrounding =
+//       L2F([&](Agent* neighbour, sq_dist) {
+//         auto* nearby = bdm_static_cast<const MyCell*>neighbor; // ???
+//         if (nearby->GetCellType() != agent_a->GetCellType()) { // if others are opposing type
+//           PhysicalBond(agent_a, nearby) // Add Physical Bond
+//         }
+//       });
+//     ctxt->ForEachNeighbor(check_surrounding, *agent_a,
+//                           sq_dist);
+//   }
+//
+//   private:
+//     double sq_dist_;
+// };
 
 }  // namespace bdm
 
