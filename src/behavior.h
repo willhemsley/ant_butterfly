@@ -73,10 +73,11 @@ class Bond_Species : public Behavior {
    * Finding agents of opposing type and bonding if within set distance
    *
    **/
-   void Run(Cell* cell, double squared_dist_, double squared_radius) {
-     auto* larva = bdm_static_cast<Butterfly*>(cell);
+   void Run(Agent* agent) override {
+     double squared_dist = squared_dist_;
+     auto* larva = bdm_static_cast<Butterfly*>(agent);
      auto* sim = Simulation::GetActive();
-     auto& position = larva->GetPosition(); // get position of agent
+     // auto& position = larva->GetPosition(); // get position of agent
 
      auto* ctxt = sim->GetExecutionContext(); // get context information
      auto check_surrounding =
@@ -87,12 +88,14 @@ class Bond_Species : public Behavior {
 
            // 2. Update vectors of bonded agents
            // add bonded butterfly to ant bond vector
-           vector<Cell*> bonded_bfly_new = nearby_ant->GetBondedButterfly();
+           std::vector<Cell*> bonded_bfly_new{};
+           bonded_bfly_new = nearby_ant->GetBondedButterfly();
            bonded_bfly_new.push_back(larva);
            nearby_ant->SetBondedButterfly(bonded_bfly_new);
 
            // Get vector of ants bonded to butterfly
-           vector<Cell*> bonded_ants_new = larva->GetBondedAnts();
+           std::vector<Cell*> bonded_ants_new{};
+           bonded_ants_new = larva->GetBondedAnts();
            bonded_ants_new.push_back(nearby_ant);
            larva->SetBondedAnts(bonded_ants_new);
 
@@ -102,8 +105,7 @@ class Bond_Species : public Behavior {
          }
        });
 
-     ctxt->ForEachNeighbor(check_surrounding, *larva, squared_radius);
-
+       ctxt->ForEachNeighbor(check_surrounding, *larva, squared_dist);
    }
 
    private:

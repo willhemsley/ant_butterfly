@@ -25,13 +25,13 @@ class Butterfly : public Cell {
   // int GetButterflyColour() const { return butterfly_colour_; }
 
   // get and set bonded ants
-  void SetBondedAnts(vector<Cell*> bonded_ants) { bonded_ants_ = bonded_ants; }
-  vector<Cell*> GetBondedAnts() { return bonded_ants_; }
+  void SetBondedAnts(std::vector<Cell*> bonded_ants) { bonded_ants_ = bonded_ants; }
+  std::vector<Cell*> GetBondedAnts() { return bonded_ants_; }
 
  private:
   int butterfly_type_ = -1;
   // int butterfly_colour_;
-  vector<Cell*> bonded_ants_{};
+  std::vector<Cell*> bonded_ants_{};
 };
 
 }  // namespace bdm

@@ -25,13 +25,13 @@ class Ant : public Cell {
   // int GetAgentColour() const { return ant_colour_; }
 
   // get and set bonded larva
-  void SetBondedButterfly(vector<Cell*> bonded_bfly) { bonded_bfly_ = bonded_bfly; }
-  vector<Cell*> GetBondedButterfly() { return bonded_bfly_; }
+  void SetBondedButterfly(std::vector<Cell*> bonded_bfly) { bonded_bfly_ = bonded_bfly; }
+  std::vector<Cell*> GetBondedButterfly() { return bonded_bfly_; }
 
  private:
   int ant_type_ = 1;
   // int ant_colour_;
-  vector<Cell*> bonded_bfly_{};
+  std::vector<Cell*> bonded_bfly_{};
 };
 
 }  // namespace bdm
