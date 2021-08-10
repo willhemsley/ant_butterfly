@@ -16,16 +16,16 @@ class Ant : public Cell {
   virtual ~Ant() {}
 
   // Get and set cell type
-  void SetAntType(int type) { ant_type_ = type; }
-  int GetAntType() const { return ant_type_; }
+  // void SetAgentType(std::string type) { ant_type_ = type; }
+  // int GetAgentType() const { return ant_type_; }
 
   // Get and set cell colour
-  void SetAntColour(int ant_colour) { ant_colour_ = ant_colour; }
-  int GetAntColour() const { return ant_colour_; }
+  // void SetAgentColour(int ant_colour) { ant_colour_ = ant_colour; }
+  // int GetAgentColour() const { return ant_colour_; }
 
  private:
-  int ant_type_;
-  int ant_colour_;
+  // int ant_type_ = "ant";
+  // int ant_colour_;
 };
 
 }  // namespace bdm

@@ -69,8 +69,8 @@ inline int Simulate(int argc, const char** argv) {
     //ant->AddBehavior(new Chemotaxis("Substance", 1));
     //ant->AddBehavior(new RandomMovement(0.5)); // RandomMovement(speed)
     //ant->AddBehavior(new YMovement_Und(-0.5)); // MovementX(speed)
-    ant->SetAntType(1);
-    ant->SetAntColour(1);
+    // ant->SetAgentType("ant");
+    // ant->SetAntColour(1);
 
     rm->AddAgent(ant);
   }
@@ -90,8 +90,8 @@ inline int Simulate(int argc, const char** argv) {
     //larvae->AddBehavior(new Chemotaxis("Substance", 1));
     //larvae->AddBehavior(new RandomMovement());
     //larvae->AddBehavior(new YMovement_Und(1));
-    larvae->SetButterflyType(-1);
-    larvae->SetButterflyColour(-1);
+    // larvae->SetAgentType("butterfly");
+    // larvae->SetButterflyColour(-1);
 
     rm->AddAgent(larvae);
   }

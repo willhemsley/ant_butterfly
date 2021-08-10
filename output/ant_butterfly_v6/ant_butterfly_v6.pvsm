@@ -5564,7 +5564,6 @@
         <Element index="0" value="Normals"/>
         <Domain name="array_list" id="720.SelectionPointFieldDataArrayName.array_list">
           <String text="Normals"/>
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -5632,7 +5631,6 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="720.ColorArrayName.array_list">
           <String text="Normals"/>
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -5705,7 +5703,6 @@
         <Domain name="array_list" id="720.GlyphTableIndexArray.array_list">
           <String text="None"/>
           <String text="Normals"/>
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -5906,7 +5903,6 @@
         <Element index="0" value="Normals"/>
         <Domain name="array_list" id="720.OSPRayScaleArray.array_list">
           <String text="Normals"/>
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -5942,7 +5938,6 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="720.OpacityArray.array_list">
           <String text="Normals"/>
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6082,7 +6077,6 @@
         <Domain name="array_list" id="720.SelectScaleArray.array_list">
           <String text="None"/>
           <String text="Normals"/>
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6247,7 +6241,6 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="720.SetScaleArray.array_list">
           <String text="Normals"/>
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6399,7 +6392,6 @@
         <Element index="0" value="Normals"/>
         <Domain name="array_list" id="1114.SelectionPointFieldDataArrayName.array_list">
           <String text="Normals"/>
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6467,7 +6459,6 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="1114.ColorArrayName.array_list">
           <String text="Normals"/>
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6540,7 +6531,6 @@
         <Domain name="array_list" id="1114.GlyphTableIndexArray.array_list">
           <String text="None"/>
           <String text="Normals"/>
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6741,7 +6731,6 @@
         <Element index="0" value="Normals"/>
         <Domain name="array_list" id="1114.OSPRayScaleArray.array_list">
           <String text="Normals"/>
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6777,7 +6766,6 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="1114.OpacityArray.array_list">
           <String text="Normals"/>
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6917,7 +6905,6 @@
         <Domain name="array_list" id="1114.SelectScaleArray.array_list">
           <String text="None"/>
           <String text="Normals"/>
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -7082,7 +7069,6 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="1114.SetScaleArray.array_list">
           <String text="Normals"/>
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -8375,19 +8361,14 @@
       <Property name="CellArrayStatus" id="338.CellArrayStatus">
         <Domain name="array_list" id="338.CellArrayStatus.array_list"/>
       </Property>
-      <Property name="PointArrayInfo" id="338.PointArrayInfo" number_of_elements="4">
-        <Element index="0" value="ant_type_"/>
+      <Property name="PointArrayInfo" id="338.PointArrayInfo" number_of_elements="2">
+        <Element index="0" value="diameter_"/>
         <Element index="1" value="1"/>
-        <Element index="2" value="diameter_"/>
-        <Element index="3" value="1"/>
       </Property>
-      <Property name="PointArrayStatus" id="338.PointArrayStatus" number_of_elements="4">
-        <Element index="0" value="ant_type_"/>
+      <Property name="PointArrayStatus" id="338.PointArrayStatus" number_of_elements="2">
+        <Element index="0" value="diameter_"/>
         <Element index="1" value="1"/>
-        <Element index="2" value="diameter_"/>
-        <Element index="3" value="1"/>
         <Domain name="array_list" id="338.PointArrayStatus.array_list">
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -8449,7 +8430,6 @@
         <Element index="4" value="diameter_"/>
         <Domain name="array_list" id="350.ScaleArray.array_list">
           <String text="No scale array"/>
-          <String text="ant_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -8709,19 +8689,14 @@
       <Property name="CellArrayStatus" id="732.CellArrayStatus">
         <Domain name="array_list" id="732.CellArrayStatus.array_list"/>
       </Property>
-      <Property name="PointArrayInfo" id="732.PointArrayInfo" number_of_elements="4">
-        <Element index="0" value="butterfly_type_"/>
+      <Property name="PointArrayInfo" id="732.PointArrayInfo" number_of_elements="2">
+        <Element index="0" value="diameter_"/>
         <Element index="1" value="1"/>
-        <Element index="2" value="diameter_"/>
-        <Element index="3" value="1"/>
       </Property>
-      <Property name="PointArrayStatus" id="732.PointArrayStatus" number_of_elements="4">
-        <Element index="0" value="butterfly_type_"/>
+      <Property name="PointArrayStatus" id="732.PointArrayStatus" number_of_elements="2">
+        <Element index="0" value="diameter_"/>
         <Element index="1" value="1"/>
-        <Element index="2" value="diameter_"/>
-        <Element index="3" value="1"/>
         <Domain name="array_list" id="732.PointArrayStatus.array_list">
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -8783,7 +8758,6 @@
         <Element index="4" value="diameter_"/>
         <Domain name="array_list" id="744.ScaleArray.array_list">
           <String text="No scale array"/>
-          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>

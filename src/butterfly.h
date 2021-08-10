@@ -16,16 +16,16 @@ class Butterfly : public Cell {
   virtual ~Butterfly() {}
 
   // Get and set cell type
-  void SetButterflyType(int type) { butterfly_type_ = type; }
-  int GetButterflyType() const { return butterfly_type_; }
+  // void SetAgentType(int type) { butterfly_type_ = type; }
+  // intGetAgentType() const { return butterfly_type_; }
 
   // Get and set cell colour
-  void SetButterflyColour(int butterfly_colour) { butterfly_colour_ = butterfly_colour; }
-  int GetButterflyColour() const { return butterfly_colour_; }
+  // void SetButterflyColour(int butterfly_colour) { butterfly_colour_ = butterfly_colour; }
+  // int GetButterflyColour() const { return butterfly_colour_; }
 
  private:
-  int butterfly_type_;
-  int butterfly_colour_;
+  // int butterfly_type_;
+  // int butterfly_colour_;
 };
 
 }  // namespace bdm
