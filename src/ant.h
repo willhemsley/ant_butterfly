@@ -1,33 +1,33 @@
 // Adapted from demo tumor_concept and soma_clustering tutorials
 
-#ifndef MY_CELL_H_
-#define MY_CELL_H_
+#ifndef ANT_H_
+#define ANT_H_
 
 #include <biodynamo.h>
 
 namespace bdm {
 
-class MyCell : public Cell {
-  BDM_AGENT_HEADER(MyCell, Cell, 1);
+class Ant : public Agent {
+  BDM_AGENT_HEADER(Ant, Agent, 1);
 
  public:
-  MyCell() {}
-  explicit MyCell(const Double3& position) : Base(position) {}
-  virtual ~MyCell() {}
+  Ant() {}
+  explicit Ant(const Double3& position) : Base(position) {}
+  virtual ~Ant() {}
 
   // Get and set cell type
-  void SetCellType(int type) { cell_type_ = type; }
-  int GetCellType() const { return cell_type_; }
+  void SetCellType(int type) { ant_type_ = type; }
+  int GetCellType() const { return ant_type_; }
 
   // Get and set cell colour
-  void SetCellColour(int cell_colour) { cell_colour_ = cell_colour; }
-  int GetCellColour() const { return cell_colour_; }
+  void SetAntColour(int ant_colour) { ant_colour_ = cell_colour; }
+  int GetAntColour() const { return ant_colour_; }
 
  private:
-  int cell_type_;
-  int cell_colour_;
+  int ant_type_;
+  int ant_colour_;
 };
 
 }  // namespace bdm
 
-#endif  // MY_CELL_H_
+#endif  // ANT_H_
