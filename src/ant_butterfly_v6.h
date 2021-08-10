@@ -88,7 +88,6 @@ inline int Simulate(int argc, const char** argv) {
     larvae->AddBehavior(new Secretion("Substance_Sugar")); // Add secretion behaviour, i.e secrete sugar
     //larvae->AddBehavior(new Chemotaxis("Substance", 1));
     //larvae->AddBehavior(new RandomMovement());
-    //larvae->AddBehavior(new YMovement_Und(1));
     larvae->SetCellType(-1);
     larvae->SetCellColour(-1);
 
