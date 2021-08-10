@@ -5,7 +5,8 @@
 #define BEHAVIOR_H_
 
 #include "core/behavior/behavior.h"
-#include "my_cell.h"
+#include "ant.h"
+#include "butterfly.h"
 //#include "physical_bond.h"
 
 namespace bdm {

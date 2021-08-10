@@ -3,7 +3,8 @@
 #define ANT_BUTTERFLY_V6_H_
 
 #include "biodynamo.h"
-#include "my_cell.h"
+#include "ant.h"
+#include "butterfly.h"
 #include "core/util/timing.h"
 #include "behavior.h"
 //#include "physical_bond.h"
@@ -62,14 +63,14 @@ inline int Simulate(int argc, const char** argv) {
     y_coord = myrand->Uniform(0, 250); // set starting boundary in y
     z_coord = myrand->Uniform(param->min_bound, param->max_bound);
 
-    MyCell* ant = new MyCell({x_coord, y_coord, z_coord});
+    Ant* ant = new Ant({x_coord, y_coord, z_coord});
     ant->SetDiameter(10);
     ant->AddBehavior(new Chemotaxis("Substance_Sugar", 1)); // Chemotaxis(substance, speed)
     //ant->AddBehavior(new Chemotaxis("Substance", 1));
     //ant->AddBehavior(new RandomMovement(0.5)); // RandomMovement(speed)
     //ant->AddBehavior(new YMovement_Und(-0.5)); // MovementX(speed)
-    ant->SetCellType(1);
-    ant->SetCellColour(1);
+    ant->SetAntType(1);
+    ant->SetAntColour(1);
 
     rm->AddAgent(ant);
   }
@@ -83,14 +84,14 @@ inline int Simulate(int argc, const char** argv) {
     y_coord = myrand->Uniform(0, 250);
     z_coord = myrand->Uniform(param->min_bound, param->max_bound);
 
-    MyCell* larvae = new MyCell({x_coord, y_coord, z_coord});
+    Butterfly* larvae = new Butterfly({x_coord, y_coord, z_coord});
     larvae->SetDiameter(10);
     larvae->AddBehavior(new Secretion("Substance_Sugar")); // Add secretion behaviour, i.e secrete sugar
     //larvae->AddBehavior(new Chemotaxis("Substance", 1));
     //larvae->AddBehavior(new RandomMovement());
     //larvae->AddBehavior(new YMovement_Und(1));
-    larvae->SetCellType(-1);
-    larvae->SetCellColour(-1);
+    larvae->SetButterflyType(-1);
+    larvae->SetButterflyColour(-1);
 
     rm->AddAgent(larvae);
   }

@@ -5,7 +5,13 @@
   },
   "agents": [
     {
-      "name":"MyCell",
+      "name":"Ant",
+      "glyph":"Glyph",
+      "shape":"Sphere",
+      "scaling_attribute":"diameter_"
+    },
+    {
+      "name":"Butterfly",
       "glyph":"Glyph",
       "shape":"Sphere",
       "scaling_attribute":"diameter_"

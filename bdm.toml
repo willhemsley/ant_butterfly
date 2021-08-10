@@ -3,8 +3,12 @@ export = true
 interval = 1
 
 	[[visualize_agent]]
-	name = "MyCell"
-	additional_data_members = [ "diameter_", "cell_type_" ]
+	name = "Ant"
+	additional_data_members = [ "diameter_", "ant_type_" ]
+
+	[[visualize_agent]]
+	name = "Butterfly"
+	additional_data_members = [ "diameter_", "butterfly_type_" ]
 
 	[[visualize_diffusion]]
 	name = "Substance_Sugar"
