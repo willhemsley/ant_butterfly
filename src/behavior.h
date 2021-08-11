@@ -77,6 +77,15 @@ class Bond_Species : public Behavior {
      auto* sim = Simulation::GetActive();
 
      auto* ctxt = sim->GetExecutionContext(); // get context information
+
+     // find vector of bonds (butterfly bonded to ant)
+     std::vector<Cell*> bonded_bfly_new{};
+     bonded_bfly_new = nearby_ant->GetBondedButterfly();
+
+     // find vector of bonds (ants bonded to butterfly)
+     std::vector<Cell*> bonded_ants_new{};
+     bonded_ants_new = larva->GetBondedAnts();
+
      auto check_surrounding =
        L2F([&](Agent* neighbor, double squared_dist) {
 
@@ -84,10 +93,10 @@ class Bond_Species : public Behavior {
          if (auto* nearby_ant = dynamic_cast<Ant*>(neighbor)) {
 
            // 2. Remove all behaviors when to create 'bond' behavior
-           // adapted from forum
+           // adapted from forum (https://forum.biodynamo.org/t/agent-removal-cell-death/35/4)
            const auto& larva_behaviors = larva->GetAllBehaviors();
            for (int i = 0; i < larva_behaviors.size(); i++) {
-                  larva->RemoveBehavior(larva_behaviors[i]);
+             larva->RemoveBehavior(larva_behaviors[i]);
            }
            const auto& ant_behaviors = nearby_ant->GetAllBehaviors();
            for (int i = 0; i < ant_behaviors.size(); i++) {
@@ -99,24 +108,20 @@ class Bond_Species : public Behavior {
            auto& pos_ant = nearby_ant->GetPosition(); // get position of cell
            auto& pos_larva = larva->GetPosition(); // get position of cell
 
-           while ((pos_ant[0] > 150) && (pos_larva[0] > 150)) { // if overground (i.e. y>150 )
+           while ((pos_ant[1] > 150) && (pos_larva[1] > 150)) { // if overground (i.e. y>150 )
+             // make this into a behavior?
              Double3 ymovement = {{0,1,0}};
              auto new_pos_ant = pos_ant - ymovement; // update position
              auto new_pos_larva = pos_larva - ymovement; // update position
-             larva->SetPosition(new_pos_larva);
              nearby_ant->SetPosition(new_pos_ant);
              larva->SetPosition(new_pos_larva);
            }
 
            // 4. Update vectors of bonded agents
            // add bonded butterfly to ant bond vector
-           std::vector<Cell*> bonded_bfly_new{};
-           bonded_bfly_new = nearby_ant->GetBondedButterfly();
            bonded_bfly_new.push_back(larva);
            nearby_ant->SetBondedButterfly(bonded_bfly_new);
            // Get vector of ants bonded to butterfly
-           std::vector<Cell*> bonded_ants_new{};
-           bonded_ants_new = larva->GetBondedAnts();
            bonded_ants_new.push_back(nearby_ant);
            larva->SetBondedAnts(bonded_ants_new);
 
