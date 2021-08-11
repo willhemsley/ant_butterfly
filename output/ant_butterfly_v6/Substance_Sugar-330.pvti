@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<VTKFile type="PImageData" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+<PImageData WholeExtent="0 19 0 19 0 19" GhostLevel="0" Origin="0 0 0" Spacing="26.3158 26.3158 26.3158">
+  <PPointData>
+      <PDataArray type="Float64" Name="Substance Concentration" NumberOfComponents="1"/>
+  </PPointData>
+    <Piece Extent="0 19 0 19 0 5" Source="Substance_Sugar-330_0.vti"/>
+    <Piece Extent="0 19 0 19 5 10" Source="Substance_Sugar-330_1.vti"/>
+    <Piece Extent="0 19 0 19 10 15" Source="Substance_Sugar-330_2.vti"/>
+    <Piece Extent="0 19 0 19 15 19" Source="Substance_Sugar-330_3.vti"/>
+  </PImageData>
+</VTKFile>

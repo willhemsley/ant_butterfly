@@ -25,8 +25,8 @@ class Butterfly : public Cell {
   // int GetButterflyColour() const { return butterfly_colour_; }
 
   // get and set bonded ants
-  void SetBondedAnts(std::vector<Cell*> bonded_ants) { bonded_ants_ = bonded_ants; }
-  std::vector<Cell*> GetBondedAnts() { return bonded_ants_; }
+  void SetBondedAgents(std::vector<Cell*> bonded_ants) { bonded_ants_ = bonded_ants; }
+  std::vector<Cell*> GetBondedAgents() { return bonded_ants_; }
 
  private:
   int butterfly_type_ = -1;

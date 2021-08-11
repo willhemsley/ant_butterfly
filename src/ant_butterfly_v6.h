@@ -19,7 +19,7 @@ inline int Simulate(int argc, const char** argv) {
     // Create an artificial bound for the simulation space
     param->bound_space = Param::BoundSpaceMode::kClosed;  // set domain as closed space
     param->min_bound = 0;
-    param->max_bound = 500; // cube of 400*400*400
+    param->max_bound = 500; // cube of 500*500*500
     param->unschedule_default_operations = {"mechanical forces"};
     param->remove_output_dir_contents = true; // remove the old output files
   };
@@ -30,13 +30,13 @@ inline int Simulate(int argc, const char** argv) {
   auto* myrand = simulation.GetRandom(); // random number
 
   size_t num_larvae = 100; // set the number of larvae cells
-  size_t num_ant = 900; // set the number of ant cells
+  size_t num_ant = 1000; // set the number of ant cells
   double x_coord, y_coord, z_coord {0}; // initialise coordinates
 
 // Parralise the following block of code
 //#pragma omp parallel
 
-  myrand->SetSeed(4321); // Set random seed so reproducible results
+  //myrand->SetSeed(4321); // Set random seed so reproducible results
 
   /**********************************************************************
   / Defining Substances
@@ -60,18 +60,19 @@ inline int Simulate(int argc, const char** argv) {
 
   for (int i = 0; i < num_ant; ++i) {
     x_coord = myrand->Uniform(param->min_bound, param->max_bound);
-    y_coord = myrand->Uniform(250, 500); // set starting boundary in y
+    y_coord = myrand->Uniform(150, 500); // set starting boundary in y
     z_coord = myrand->Uniform(param->min_bound, param->max_bound);
 
     Ant* ant = new Ant({x_coord, y_coord, z_coord});
     ant->SetDiameter(10);
-    ant->AddBehavior(new Chemotaxis("Substance_Sugar", 1)); // Chemotaxis(substance, speed)
+    ant->AddBehavior(new Chemotaxis("Substance_Sugar", 3)); // Chemotaxis(substance, speed)
     //ant->AddBehavior(new Chemotaxis("Substance", 1));
     //ant->AddBehavior(new RandomMovement(0.5)); // RandomMovement(speed)
     //ant->AddBehavior(new YMovement_Und(-0.5)); // MovementX(speed)
     // ant->SetAgentType(1);
     // ant->SetAntColour(1);
-    ant->AddBehavior(new Bond_Species());
+    double sq_dist = 1;
+    ant->AddBehavior(new Bond_Species(sq_dist));
 
     rm->AddAgent(ant);
   }
@@ -82,7 +83,7 @@ inline int Simulate(int argc, const char** argv) {
 
   for (int j = 0; j < num_larvae; ++j) {
     x_coord = myrand->Uniform(param->min_bound, param->max_bound); // set starting boundary in x
-    y_coord = myrand->Uniform(250, 500);
+    y_coord = myrand->Uniform(150, 500);
     z_coord = myrand->Uniform(param->min_bound, param->max_bound);
 
     Butterfly* larvae = new Butterfly({x_coord, y_coord, z_coord});
@@ -104,7 +105,7 @@ inline int Simulate(int argc, const char** argv) {
 
   auto start = Timing::Timestamp(); // get start time
 
-  simulation.GetScheduler()->Simulate(100);
+  simulation.GetScheduler()->Simulate(500);
 
   std::cout << "Simulation completed successfully!" << std::endl;
   auto stop = Timing::Timestamp(); // get end time
