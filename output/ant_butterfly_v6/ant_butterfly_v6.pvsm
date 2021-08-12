@@ -12521,29 +12521,29 @@
       </Property>
       <Property name="CameraFocalPoint" id="319.CameraFocalPoint" number_of_elements="3">
         <Element index="0" value="249.9958393573761"/>
-        <Element index="1" value="324.7129135131836"/>
+        <Element index="1" value="323.9157227119431"/>
         <Element index="2" value="249.99306893348694"/>
       </Property>
       <Property name="CameraFocalPointInfo" id="319.CameraFocalPointInfo" number_of_elements="3">
         <Element index="0" value="249.9958393573761"/>
-        <Element index="1" value="324.7129135131836"/>
+        <Element index="1" value="323.9157227119431"/>
         <Element index="2" value="249.99306893348694"/>
       </Property>
       <Property name="CameraParallelScale" id="319.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="402.4750454613424"/>
+        <Element index="0" value="402.83039902940595"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="319.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="402.4750454613424"/>
+        <Element index="0" value="402.83039902940595"/>
       </Property>
       <Property name="CameraPosition" id="319.CameraPosition" number_of_elements="3">
         <Element index="0" value="249.9958393573761"/>
-        <Element index="1" value="324.7129135131836"/>
-        <Element index="2" value="1805.037232325397"/>
+        <Element index="1" value="323.9157227119431"/>
+        <Element index="2" value="1806.4102130808233"/>
       </Property>
       <Property name="CameraPositionInfo" id="319.CameraPositionInfo" number_of_elements="3">
         <Element index="0" value="249.9958393573761"/>
-        <Element index="1" value="324.7129135131836"/>
-        <Element index="2" value="1805.037232325397"/>
+        <Element index="1" value="323.9157227119431"/>
+        <Element index="2" value="1806.4102130808233"/>
       </Property>
       <Property name="CameraViewAngle" id="319.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>

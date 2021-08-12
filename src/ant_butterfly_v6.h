@@ -60,7 +60,7 @@ inline int Simulate(int argc, const char** argv) {
 
   for (int i = 0; i < num_ant; ++i) {
     x_coord = myrand->Uniform(param->min_bound, param->max_bound);
-    y_coord = myrand->Uniform(150, 500); // set starting boundary in y
+    y_coord = myrand->Uniform(150, 500); // set overground as above 150
     z_coord = myrand->Uniform(param->min_bound, param->max_bound);
 
     Ant* ant = new Ant({x_coord, y_coord, z_coord});
@@ -71,8 +71,7 @@ inline int Simulate(int argc, const char** argv) {
     //ant->AddBehavior(new YMovement_Und(-0.5)); // MovementX(speed)
     // ant->SetAgentType(1);
     // ant->SetAntColour(1);
-    double sq_dist = 1;
-    ant->AddBehavior(new Bond_Species(sq_dist));
+    //ant->AddBehavior(new Bond_Species());
 
     rm->AddAgent(ant);
   }
@@ -83,7 +82,7 @@ inline int Simulate(int argc, const char** argv) {
 
   for (int j = 0; j < num_larvae; ++j) {
     x_coord = myrand->Uniform(param->min_bound, param->max_bound); // set starting boundary in x
-    y_coord = myrand->Uniform(150, 500);
+    y_coord = myrand->Uniform(150, 500); // set overground => above 150
     z_coord = myrand->Uniform(param->min_bound, param->max_bound);
 
     Butterfly* larvae = new Butterfly({x_coord, y_coord, z_coord});
@@ -94,7 +93,8 @@ inline int Simulate(int argc, const char** argv) {
     //larvae->AddBehavior(new YMovement_Und(1));
     // larvae->SetAgentType(-1);
     // larvae->SetButterflyColour(-1);
-    larvae->AddBehavior(new Bond_Species());
+    //larvae->AddBehavior(new Bond_Species());
+    larvae->AddBehavior(new Move_Underground());
 
     rm->AddAgent(larvae);
   }
