@@ -28,10 +28,15 @@ class Butterfly : public Cell {
   void SetBondedAgents(std::vector<Cell*> bonded_ants) { bonded_ants_ = bonded_ants; }
   std::vector<Cell*> GetBondedAgents() { return bonded_ants_; }
 
+  // get and set bool bond
+  void SetBonded(int bonded) { bonded_ = bonded; }
+  int GetBonded() { return bonded_; }
+
  private:
   int butterfly_type_ = -1;
   // int butterfly_colour_;
   std::vector<Cell*> bonded_ants_{};
+  int bonded_ = 0;
 };
 
 }  // namespace bdm

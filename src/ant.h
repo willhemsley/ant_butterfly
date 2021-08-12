@@ -28,10 +28,15 @@ class Ant : public Cell {
   void SetBondedAgents(std::vector<Cell*> bonded_bfly) { bonded_bfly_ = bonded_bfly; }
   std::vector<Cell*> GetBondedAgents() { return bonded_bfly_; }
 
+  // get and set bool bond
+  void SetBonded(int bonded) { bonded_ = bonded; }
+  int GetBonded() { return bonded_; }
+
  private:
   int ant_type_ = 1;
   // int ant_colour_;
   std::vector<Cell*> bonded_bfly_{};
+  int bonded_ = 0;
 };
 
 }  // namespace bdm

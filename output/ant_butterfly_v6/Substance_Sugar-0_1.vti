@@ -2,8 +2,8 @@
   <ImageData WholeExtent="0 19 0 19 0 19" Origin="0 0 131.57894736842104" Spacing="26.31578947368421 26.31578947368421 26.31578947368421">
   <Piece Extent="0 19 0 19 5 9">
     <PointData>
-      <DataArray type="Float64" Name="Substance Concentration" format="binary" RangeMin="0" RangeMax="1.7922024">
-        AQAAAACAAACAPgAAagEAAA==eJztmy0SwjAQhXsbZBH4KkwNqhoOwBW4EYpjwBXo4BlEJQKBgA5DpxnS7E824X2udJJ9bLLJbghFAQAAuhzr9nKtl1VsHYCXX+NKfU/V1Ra77Xl/q/pnX3uu9lI6Q+1px5WWvdzsgG+s+H2oQyvufXW5dFjxHwAAgBf/ti5b/b7W9nGp99zklndPtcM1b3zHNdSOVf/x2GvI9rjz5VzjMBUdAAD75L5OWl0PffMJqXxGux+rpJ53AD+kx4Uap751Raz8njsuqP3Nu9Nq063ffntUoXXIuP8bYp33ad/rnKrLpdP1TO0PAJAfVvNt7fNervsa3DpD+9fK70P9pXUvJjRf8v1cavy553/fvrwvZuWBL56k53sqWF1HU7WXKuPrQfzfP1x1DFUXN5hnAAAraN/T1DonlII7355qj1pPuPZvbr9y7d/D59jngC77vvVH7P0/tq6hv6TvHYXqw/9aQAgYl7x4Av7TLEQ=
+      <DataArray type="Float64" Name="Substance Concentration" format="binary" RangeMin="0" RangeMax="0.896751">
+        AQAAAACAAACAPgAAfQEAAA==eJztmjESwiAQRXMbSxv7VDbpvYVX8EZWHsMzmLF3PIClhUMhyrBZ2N0P2ddkJpPAB5ZlFxgGx1kv12m+P6b9aK0jJuiah9Pxdn6OKZ3xe+325OpL6UfRGd7HT2q/f54HdfvJ6Yr1S/U3dVytx9/5prT/pe0pN/+sqaULvX3UceC2A90OrerP1Yc+PxzHaZ9W/As17qxdPvW/pf4aJT+ifmcd34c8LJX3oKyX0nZaG1Rd0qy13SlQ4/tS/6rlF7T6T8tufX44jtML0vvkXGqtU6jrG0r5XP6Pz+95kPU63mreIR2foe4/c0H1D73TW3y/FKofpJYjodFxnL5A9Z9cXSj71DGpe1LWulqldrxQ+5wL1Q4DWudoaPectON76f30UnvT8v+o57FWlMX3cvdlU+fAtP/w/Z7jrAnUecj1Mzq6+PswWvG99n0qbVDvS5SWi3JforXzDGlaiWuXghrfa+ctXLi6tq/dZnvBaxdXn43/0s+P0OdzzBujz3VX
       </DataArray>
     </PointData>
     <CellData>

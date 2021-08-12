@@ -346,11 +346,11 @@
         <Element index="1" value="0.231373"/>
         <Element index="2" value="0.298039"/>
         <Element index="3" value="0.752941"/>
-        <Element index="4" value="0.8964261000000001"/>
+        <Element index="4" value="0.8961012"/>
         <Element index="5" value="0.865003"/>
         <Element index="6" value="0.865003"/>
         <Element index="7" value="0.865003"/>
-        <Element index="8" value="1.7928522000000002"/>
+        <Element index="8" value="1.7922024"/>
         <Element index="9" value="0.705882"/>
         <Element index="10" value="0.0156863"/>
         <Element index="11" value="0.14902"/>
@@ -441,7 +441,7 @@
         <Element index="1" value="0"/>
         <Element index="2" value="0.5"/>
         <Element index="3" value="0"/>
-        <Element index="4" value="1.7928522000000002"/>
+        <Element index="4" value="1.7922024"/>
         <Element index="5" value="1"/>
         <Element index="6" value="0.5"/>
         <Element index="7" value="0"/>
@@ -2166,7 +2166,7 @@
         <Element index="1" value="0"/>
         <Element index="2" value="0.5"/>
         <Element index="3" value="0"/>
-        <Element index="4" value="1.7928522000000002"/>
+        <Element index="4" value="1.7922024"/>
         <Element index="5" value="1"/>
         <Element index="6" value="0.5"/>
         <Element index="7" value="0"/>
@@ -2654,7 +2654,7 @@
         <Element index="1" value="0"/>
         <Element index="2" value="0.5"/>
         <Element index="3" value="0"/>
-        <Element index="4" value="1.7928522000000002"/>
+        <Element index="4" value="1.7922024"/>
         <Element index="5" value="1"/>
         <Element index="6" value="0.5"/>
         <Element index="7" value="0"/>
@@ -5564,6 +5564,8 @@
         <Element index="0" value="Normals"/>
         <Domain name="array_list" id="720.SelectionPointFieldDataArrayName.array_list">
           <String text="Normals"/>
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -5631,6 +5633,8 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="720.ColorArrayName.array_list">
           <String text="Normals"/>
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -5703,6 +5707,8 @@
         <Domain name="array_list" id="720.GlyphTableIndexArray.array_list">
           <String text="None"/>
           <String text="Normals"/>
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -5903,6 +5909,8 @@
         <Element index="0" value="Normals"/>
         <Domain name="array_list" id="720.OSPRayScaleArray.array_list">
           <String text="Normals"/>
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -5938,6 +5946,8 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="720.OpacityArray.array_list">
           <String text="Normals"/>
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6077,6 +6087,8 @@
         <Domain name="array_list" id="720.SelectScaleArray.array_list">
           <String text="None"/>
           <String text="Normals"/>
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6241,6 +6253,8 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="720.SetScaleArray.array_list">
           <String text="Normals"/>
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6392,6 +6406,8 @@
         <Element index="0" value="Normals"/>
         <Domain name="array_list" id="1114.SelectionPointFieldDataArrayName.array_list">
           <String text="Normals"/>
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6459,6 +6475,8 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="1114.ColorArrayName.array_list">
           <String text="Normals"/>
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6531,6 +6549,8 @@
         <Domain name="array_list" id="1114.GlyphTableIndexArray.array_list">
           <String text="None"/>
           <String text="Normals"/>
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6731,6 +6751,8 @@
         <Element index="0" value="Normals"/>
         <Domain name="array_list" id="1114.OSPRayScaleArray.array_list">
           <String text="Normals"/>
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6766,6 +6788,8 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="1114.OpacityArray.array_list">
           <String text="Normals"/>
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -6905,6 +6929,8 @@
         <Domain name="array_list" id="1114.SelectScaleArray.array_list">
           <String text="None"/>
           <String text="Normals"/>
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -7069,6 +7095,8 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="1114.SetScaleArray.array_list">
           <String text="Normals"/>
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -9161,14 +9189,24 @@
       <Property name="CellArrayStatus" id="338.CellArrayStatus">
         <Domain name="array_list" id="338.CellArrayStatus.array_list"/>
       </Property>
-      <Property name="PointArrayInfo" id="338.PointArrayInfo" number_of_elements="2">
-        <Element index="0" value="diameter_"/>
+      <Property name="PointArrayInfo" id="338.PointArrayInfo" number_of_elements="6">
+        <Element index="0" value="ant_type_"/>
         <Element index="1" value="1"/>
+        <Element index="2" value="bonded_"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="diameter_"/>
+        <Element index="5" value="1"/>
       </Property>
-      <Property name="PointArrayStatus" id="338.PointArrayStatus" number_of_elements="2">
-        <Element index="0" value="diameter_"/>
+      <Property name="PointArrayStatus" id="338.PointArrayStatus" number_of_elements="6">
+        <Element index="0" value="ant_type_"/>
         <Element index="1" value="1"/>
+        <Element index="2" value="bonded_"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="diameter_"/>
+        <Element index="5" value="1"/>
         <Domain name="array_list" id="338.PointArrayStatus.array_list">
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -9230,6 +9268,8 @@
         <Element index="4" value="diameter_"/>
         <Domain name="array_list" id="350.ScaleArray.array_list">
           <String text="No scale array"/>
+          <String text="ant_type_"/>
+          <String text="bonded_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -10289,14 +10329,24 @@
       <Property name="CellArrayStatus" id="732.CellArrayStatus">
         <Domain name="array_list" id="732.CellArrayStatus.array_list"/>
       </Property>
-      <Property name="PointArrayInfo" id="732.PointArrayInfo" number_of_elements="2">
-        <Element index="0" value="diameter_"/>
+      <Property name="PointArrayInfo" id="732.PointArrayInfo" number_of_elements="6">
+        <Element index="0" value="bonded_"/>
         <Element index="1" value="1"/>
+        <Element index="2" value="butterfly_type_"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="diameter_"/>
+        <Element index="5" value="1"/>
       </Property>
-      <Property name="PointArrayStatus" id="732.PointArrayStatus" number_of_elements="2">
-        <Element index="0" value="diameter_"/>
+      <Property name="PointArrayStatus" id="732.PointArrayStatus" number_of_elements="6">
+        <Element index="0" value="bonded_"/>
         <Element index="1" value="1"/>
+        <Element index="2" value="butterfly_type_"/>
+        <Element index="3" value="1"/>
+        <Element index="4" value="diameter_"/>
+        <Element index="5" value="1"/>
         <Domain name="array_list" id="732.PointArrayStatus.array_list">
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -10358,6 +10408,8 @@
         <Element index="4" value="diameter_"/>
         <Domain name="array_list" id="744.ScaleArray.array_list">
           <String text="No scale array"/>
+          <String text="bonded_"/>
+          <String text="butterfly_type_"/>
           <String text="diameter_"/>
         </Domain>
       </Property>
@@ -12520,30 +12572,30 @@
         <Element index="0" value="0"/>
       </Property>
       <Property name="CameraFocalPoint" id="319.CameraFocalPoint" number_of_elements="3">
-        <Element index="0" value="249.9958393573761"/>
-        <Element index="1" value="323.9157227119431"/>
-        <Element index="2" value="249.99306893348694"/>
+        <Element index="0" value="250.02587294578552"/>
+        <Element index="1" value="325.1393508911133"/>
+        <Element index="2" value="250.8803732395172"/>
       </Property>
       <Property name="CameraFocalPointInfo" id="319.CameraFocalPointInfo" number_of_elements="3">
-        <Element index="0" value="249.9958393573761"/>
-        <Element index="1" value="323.9157227119431"/>
-        <Element index="2" value="249.99306893348694"/>
+        <Element index="0" value="250.02587294578552"/>
+        <Element index="1" value="325.1393508911133"/>
+        <Element index="2" value="250.8803732395172"/>
       </Property>
       <Property name="CameraParallelScale" id="319.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="402.83039902940595"/>
+        <Element index="0" value="402.1381534241089"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="319.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="402.83039902940595"/>
+        <Element index="0" value="402.1381534241089"/>
       </Property>
       <Property name="CameraPosition" id="319.CameraPosition" number_of_elements="3">
-        <Element index="0" value="249.9958393573761"/>
-        <Element index="1" value="323.9157227119431"/>
-        <Element index="2" value="1806.4102130808233"/>
+        <Element index="0" value="250.02587294578552"/>
+        <Element index="1" value="325.1393508911133"/>
+        <Element index="2" value="1804.6228857536873"/>
       </Property>
       <Property name="CameraPositionInfo" id="319.CameraPositionInfo" number_of_elements="3">
-        <Element index="0" value="249.9958393573761"/>
-        <Element index="1" value="323.9157227119431"/>
-        <Element index="2" value="1806.4102130808233"/>
+        <Element index="0" value="250.02587294578552"/>
+        <Element index="1" value="325.1393508911133"/>
+        <Element index="2" value="1804.6228857536873"/>
       </Property>
       <Property name="CameraViewAngle" id="319.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>

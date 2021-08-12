@@ -4,11 +4,11 @@ interval = 1
 
 	[[visualize_agent]]
 	name = "Ant"
-	additional_data_members = [ "diameter_" ]
+	additional_data_members = [ "diameter_", "ant_type_", "bonded_"]
 
 	[[visualize_agent]]
 	name = "Butterfly"
-	additional_data_members = [ "diameter_" ]
+	additional_data_members = [ "diameter_", "butterfly_type_", "bonded_" ]
 
 	[[visualize_diffusion]]
 	name = "Substance_Sugar"

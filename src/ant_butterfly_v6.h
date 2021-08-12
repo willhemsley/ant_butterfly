@@ -36,7 +36,7 @@ inline int Simulate(int argc, const char** argv) {
 // Parralise the following block of code
 //#pragma omp parallel
 
-  //myrand->SetSeed(4321); // Set random seed so reproducible results
+  myrand->SetSeed(4321); // Set random seed so reproducible results
 
   /**********************************************************************
   / Defining Substances
@@ -94,7 +94,8 @@ inline int Simulate(int argc, const char** argv) {
     // larvae->SetAgentType(-1);
     // larvae->SetButterflyColour(-1);
     //larvae->AddBehavior(new Bond_Species());
-    larvae->AddBehavior(new Move_Underground());
+    larvae->AddBehavior(new Fix_Nearby_Ant());
+    // larvae->AddBehavior(new Carry_Larva());
 
     rm->AddAgent(larvae);
   }
